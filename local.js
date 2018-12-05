@@ -16,7 +16,7 @@ const app = express();
 app.use(cors())
 
 mongoose.Promise= global.Promise
-mongoose.connect('mongodb://localhost/fmdsdb', {
+mongoose.connect('mongodb://admin:capstone2018@ds117773.mlab.com:17773/fmds', {
     useMongoClient: true
 })
 
