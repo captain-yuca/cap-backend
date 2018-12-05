@@ -11,7 +11,7 @@ const SerialPort = require('serialport');
 const Readline = SerialPort.parsers.Readline;
 const port = new SerialPort('/dev/ttyACM0')
 const parser = port.pipe(new Readline({delimiter: '\r\n'}));
-const PORT = 80;
+const PORT = 3000;
 
 
 const app = express();
